@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.card_login_number, .card_password{
+.card_login_number, .card_password, .card_anketa{
     background-color: #FFFFFF;
     border-radius: 5px;
     width: 640px;
@@ -22,6 +22,8 @@ h1{
     color: #000000;
 }
 p{
+    display: block;
+    width: 100%;
     text-align: left!important;
     font-family: 'Sora';
     font-style: normal;
@@ -31,7 +33,10 @@ p{
     color: #000000;
 
 }
-input[type="text"]{
+.card_anketa input, .card_anketa select{
+    margin-top: 16px!important;
+}
+input[type="text"], .card_anketa select{
     box-sizing: border-box;
     border: 0.5px solid #DADADA;
     border-radius: 4px;
@@ -45,8 +50,13 @@ input[type="text"]{
     line-height: 18px;
     color: #000000;
 }
-
-input[type="text"]::placeholder{
+.card_anketa select{
+    border: 0.5px solid #DADADA;
+    border-radius: 4px;
+    width: 200px;
+    margin: 0 6px;
+}
+input[type="text"]::placeholder, .card_anketa select{
     font-family: 'Sora';
     font-style: normal;
     /*padding-left: 16px;*/
@@ -71,7 +81,9 @@ input[type="submit"]{
     text-align: center;
     color: #FFFFFF;
 }
-
+input[type="submit"]:hover{
+    background-color: #464b52;
+}
 .card_password input[type="text"]{
     display: inline-block;
     width: 50px!important;
@@ -96,4 +108,19 @@ input[type="submit"]{
 }
 .card_password div{
     margin: 30px 0;
+}
+.card_anketa form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card_anketa form input{
+    width: 200px;
+    border-radius: 8px!important;
+    margin: 0 6px;
+}
+.card_anketa form input:nth-child(8), .card_anketa form input:nth-child(15){
+    width: 412px;
+}
+.card_anketa p{
+    margin: 16px 0 0 0;
 }
