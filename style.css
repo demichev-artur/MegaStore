@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.card_login_number, .card_password, .card_anketa{
+.card_login_number, .card_password, .card_anketa, .card_finance{
     background-color: #FFFFFF;
     border-radius: 5px;
     width: 640px;
@@ -13,6 +13,8 @@ body{
     text-align: center;
 }
 h1{
+    display: block;
+    width: 100%;
     font-family: 'Sora';
     font-style: normal;
     font-weight: 600;
@@ -33,10 +35,14 @@ p{
     color: #000000;
 
 }
-.card_anketa input, .card_anketa select{
+.card_anketa input, .card_anketa select, .card_finance input, .card_finance select{
     margin-top: 16px!important;
 }
-input[type="text"], .card_anketa select{
+.card_finance h1{
+    text-align: left;
+
+}
+input[type="text"], .card_anketa select, .card_finance select{
     box-sizing: border-box;
     border: 0.5px solid #DADADA;
     border-radius: 4px;
@@ -50,13 +56,16 @@ input[type="text"], .card_anketa select{
     line-height: 18px;
     color: #000000;
 }
-.card_anketa select{
+.card_anketa select, .card_finance select{
     border: 0.5px solid #DADADA;
     border-radius: 4px;
     width: 200px;
     margin: 0 6px;
 }
-input[type="text"]::placeholder, .card_anketa select{
+.card_finance form select:nth-child(13){
+    width: 624px;
+}
+input[type="text"]::placeholder, .card_anketa select, .card_finance select{
     font-family: 'Sora';
     font-style: normal;
     /*padding-left: 16px;*/
@@ -109,17 +118,26 @@ input[type="submit"]:hover{
 .card_password div{
     margin: 30px 0;
 }
-.card_anketa form{
+.card_anketa form, .card_finance form{
     display: flex;
     flex-wrap: wrap;
 }
-.card_anketa form input{
+.card_anketa form input, .card_finance form input, .card_finance select{
     width: 200px;
     border-radius: 8px!important;
     margin: 0 6px;
 }
 .card_anketa form input:nth-child(8), .card_anketa form input:nth-child(15){
     width: 412px;
+}
+.card_finance form input:nth-child(2){
+    width: 412px;
+}
+.card_finance form input:nth-child(4), .card_finance form input:nth-child(5){
+    width: 306px;
+}
+.card_finance form input:nth-child(7){
+    width: 624px;
 }
 .card_anketa p{
     margin: 16px 0 0 0;
