@@ -8,72 +8,80 @@ body{
 .card_login_number, .card_password, .card_anketa, .card_finance{
     background-color: #FFFFFF;
     border-radius: 5px;
-    width: 640px;
-    padding: 46px 16px;
+    width: 650px;
+    padding: 30px 16px 48px;
     text-align: center;
 }
 h1{
-    font-family: 'Sora';
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     text-align: center;
     color: #000000;
 }
+
 p{
     display: block;
     width: 100%;
-    text-align: left!important;
-    font-family: 'Sora';
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     color: #000000;
 
 }
-.card_anketa input, .card_anketa select, .card_finance select{
+.card_login_number p, .card_anketa p, .card_anketa h1, .card_finance p, .card_finance h1{
+    text-align: left!important;
+}
+.card_password p{
+    margin: 0 auto;
+    width: 256px;
+    color: #A9A9A9;
+}
+.card_anketa p, .card_finance p{
+    margin-bottom: 0;
+}
+.card_anketa input[type="text"], .card_anketa select,.card_finance input[type="text"], .card_finance select{
     margin-top: 16px!important;
 }
 input[type="text"], .card_anketa select, .card_finance select{
     box-sizing: border-box;
     border: 0.5px solid #DADADA;
-    border-radius: 4px;
+    border-radius: 5px;
     width: 100%;
-    height: 48px;
-    font-family: 'Sora';
+    height: 50px;
+    font-family: 'Source Sans Pro';
     font-style: normal;
     padding-left: 16px;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 18px;
     color: #000000;
 }
-.card_anketa select{
-    width: 200px;
-    margin: 0 6px;
-}
-input[type="text"]::placeholder, .card_anketa select{
-    font-family: 'Sora';
+
+input[type="text"]::placeholder, .card_anketa select, .card_finance select{
+    font-family: 'Source Sans Pro';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.25);
 }
 input[type="submit"]{
     cursor: pointer;
-    margin-top: 16px;
+    margin-top: 40px;
     width: 385px;
-    height: 48px;
+    height: 50px;
     background-color: #232529;
-    border: 0.5px solid #DADADA;
     border-radius: 5px;
-    font-family: 'Sora';
+    border: none;
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
@@ -88,36 +96,33 @@ input[type="submit"]:hover{
     border-radius: 12px!important;
     text-align: center!important;
     padding-left: 0;
-    font-size: 18px;
-}
-.card_password p{
-    margin: 14px auto;
-    width: 256px;
-    text-align: center!important;
-    font-family: 'Sora';
+    font-family: 'Source Sans Pro';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 600;
     line-height: 18px;
-    text-align: center;
+    font-size: 22px;
+}
 
-    color: #A9A9A9;
-}
 .card_password div{
-    margin: 30px 0;
+    margin-top: 40px;
 }
-.card_anketa form{
+.card_anketa form, .card_finance form{
     display: flex;
     flex-wrap: wrap;
 }
-.card_anketa form input{
+.card_anketa form input[type="text"], .card_finance form input[type="text"], .card_anketa select, .card_finance select{
     width: 200px;
     border-radius: 8px!important;
     margin: 0 6px;
 }
-.card_anketa form input:nth-child(8), .card_anketa form input:nth-child(15){
+
+.card_anketa form input:nth-child(7), .card_anketa form input:nth-child(14), .card_finance form input:nth-child(1){
     width: 412px;
 }
-.card_anketa p{
-    margin: 16px 0 0 0;
+.card_finance form input:nth-child(3), .card_finance form input:nth-child(4){
+    width: 306px;
 }
+.card_finance form input:nth-child(6), .card_finance select:last-child{
+    width: 624px;
+}
+
