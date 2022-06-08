@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.card_login_number, .card_password, .card_anketa{
+.card_login_number, .card_password, .card_anketa, .card_finance{
     background-color: #FFFFFF;
     border-radius: 5px;
     width: 640px;
@@ -33,10 +33,10 @@ p{
     color: #000000;
 
 }
-.card_anketa input, .card_anketa select{
+.card_anketa input, .card_anketa select, .card_finance select{
     margin-top: 16px!important;
 }
-input[type="text"], .card_anketa select{
+input[type="text"], .card_anketa select, .card_finance select{
     box-sizing: border-box;
     border: 0.5px solid #DADADA;
     border-radius: 4px;
@@ -51,15 +51,12 @@ input[type="text"], .card_anketa select{
     color: #000000;
 }
 .card_anketa select{
-    border: 0.5px solid #DADADA;
-    border-radius: 4px;
     width: 200px;
     margin: 0 6px;
 }
 input[type="text"]::placeholder, .card_anketa select{
     font-family: 'Sora';
     font-style: normal;
-    /*padding-left: 16px;*/
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
