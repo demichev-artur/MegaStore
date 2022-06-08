@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.card_login_number, .card_password, .card_anketa, .card_finance{
+.card_login_number, .card_password, .card_anketa, .card_finance, .card_success{
     background-color: #FFFFFF;
     border-radius: 5px;
     width: 650px;
@@ -40,6 +40,15 @@ p{
     margin: 0 auto;
     width: 256px;
     color: #A9A9A9;
+}
+.card_success p{
+    margin: 0 auto;
+    width: 300px;
+    color: #A9A9A9;
+}
+.card_success img{
+    display: block;
+    margin: 20px auto 0;
 }
 .card_anketa p, .card_finance p{
     margin-bottom: 0;
