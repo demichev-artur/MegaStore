@@ -1,15 +1,18 @@
 body{
-    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .card_login_number, .card_password, .card_anketa, .card_finance, .card_success{
     background-color: #FFFFFF;
     border-radius: 5px;
-    width: 650px;
+    width: 100%;
     padding: 30px 16px 48px;
     text-align: center;
+}
+.card_anketa, .card_finance{
+    align-self: flex-start;
 }
 h1{
     font-family: 'Source Sans Pro';
@@ -32,12 +35,12 @@ p{
     color: #000000;
 
 }
-.card_login_number p, .card_anketa p, .card_anketa h1, .card_finance p, .card_finance h1{
+.card_login_number p, .card_anketa p, .card_anketa h1, .card_finance p, .card_finance h1, .card_login_number h1{
     text-align: left!important;
 }
 .card_password p{
     margin: 0 auto;
-    width: 256px;
+    width: 100%;
     color: #A9A9A9;
 }
 .card_success p{
@@ -81,7 +84,7 @@ input[type="text"]::placeholder, .card_anketa select, .card_finance select{
 input[type="submit"]{
     cursor: pointer;
     margin-top: 40px;
-    width: 385px;
+    width: 100%;
     height: 50px;
     background-color: #232529;
     border-radius: 5px;
@@ -114,23 +117,23 @@ input[type="submit"]:hover{
 .card_password div{
     margin-top: 40px;
 }
-.card_anketa form, .card_finance form{
-    display: flex;
-    flex-wrap: wrap;
-}
+/*.card_anketa form, .card_finance form{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*}*/
 .card_anketa form input[type="text"], .card_finance form input[type="text"], .card_anketa select, .card_finance select{
-    width: 200px;
+    /*width: 200px;*/
     border-radius: 8px!important;
-    margin: 0 6px;
+    /*margin: 0 6px;*/
 }
 
-.card_anketa form input:nth-child(7), .card_anketa form input:nth-child(14), .card_finance form input:nth-child(1){
-    width: 412px;
-}
-.card_finance form input:nth-child(3), .card_finance form input:nth-child(4){
-    width: 306px;
-}
-.card_finance form input:nth-child(6), .card_finance select:last-child{
-    width: 624px;
-}
+/*.card_anketa form input:nth-child(7), .card_anketa form input:nth-child(14), .card_finance form input:nth-child(1){*/
+/*    width: 412px;*/
+/*}*/
+/*.card_finance form input:nth-child(3), .card_finance form input:nth-child(4){*/
+/*    width: 306px;*/
+/*}*/
+/*.card_finance form input:nth-child(6), .card_finance select:last-child{*/
+/*    width: 624px;*/
+/*}*/
 
