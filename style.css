@@ -1,5 +1,6 @@
 body{
     display: flex;
+    margin: 0;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -17,9 +18,10 @@ body{
 h1{
     font-family: 'Source Sans Pro';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 18px;
     line-height: 20px;
+    margin: 25px 0;
     text-align: center;
     color: #000000;
 }
@@ -31,6 +33,7 @@ p{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    margin: 8px 0;
     line-height: 18px;
     color: #000000;
 
@@ -60,6 +63,7 @@ p{
 }
 input[type="text"], .card_anketa select, .card_finance select{
     box-sizing: border-box;
+    display: block;
     border: 0.5px solid #DADADA;
     border-radius: 5px;
     width: 100%;
@@ -85,6 +89,8 @@ input[type="submit"]{
     cursor: pointer;
     margin-top: 40px;
     width: 100%;
+    min-width: 100px;
+    max-width: 400px;
     height: 50px;
     background-color: #232529;
     border-radius: 5px;
