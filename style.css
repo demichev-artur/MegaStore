@@ -25,7 +25,12 @@ h1{
     text-align: center;
     color: #000000;
 }
-
+.card_anketa h1:first-child{
+    font-size: 20px;
+}
+.card_password h1, .card_anketa h1:nth-child(2){
+    margin-bottom: 16px!important;
+}
 p{
     display: block;
     width: 100%;
@@ -36,19 +41,13 @@ p{
     margin: 8px 0;
     line-height: 18px;
     color: #000000;
-
 }
 .card_login_number p, .card_anketa p, .card_anketa h1, .card_finance p, .card_finance h1, .card_login_number h1{
     text-align: left!important;
 }
-.card_password p{
+.card_password p, .card_success p{
     margin: 0 auto;
-    width: 100%;
-    color: #A9A9A9;
-}
-.card_success p{
-    margin: 0 auto;
-    width: 300px;
+    width: 90%;
     color: #A9A9A9;
 }
 .card_success img{
@@ -56,10 +55,7 @@ p{
     margin: 20px auto 0;
 }
 .card_anketa p, .card_finance p{
-    margin-bottom: 0;
-}
-.card_anketa input[type="text"], .card_anketa select,.card_finance input[type="text"], .card_finance select{
-    margin-top: 16px!important;
+    margin: 8px 0;
 }
 input[type="text"], .card_anketa select, .card_finance select{
     box-sizing: border-box;
@@ -87,7 +83,7 @@ input[type="text"]::placeholder, .card_anketa select, .card_finance select{
 }
 input[type="submit"]{
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 25px;
     width: 100%;
     min-width: 100px;
     max-width: 400px;
@@ -103,6 +99,9 @@ input[type="submit"]{
     text-align: center;
     color: #FFFFFF;
 }
+.card_password input[type="submit"]{
+    margin-top: 50px;
+}
 input[type="submit"]:hover{
     background-color: #464b52;
 }
@@ -117,29 +116,11 @@ input[type="submit"]:hover{
     font-style: normal;
     font-weight: 600;
     line-height: 18px;
-    font-size: 22px;
+    font-size: 26px;
 }
-
 .card_password div{
-    margin-top: 40px;
+    margin-top: 16px;
 }
-/*.card_anketa form, .card_finance form{*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*}*/
 .card_anketa form input[type="text"], .card_finance form input[type="text"], .card_anketa select, .card_finance select{
-    /*width: 200px;*/
     border-radius: 8px!important;
-    /*margin: 0 6px;*/
 }
-
-/*.card_anketa form input:nth-child(7), .card_anketa form input:nth-child(14), .card_finance form input:nth-child(1){*/
-/*    width: 412px;*/
-/*}*/
-/*.card_finance form input:nth-child(3), .card_finance form input:nth-child(4){*/
-/*    width: 306px;*/
-/*}*/
-/*.card_finance form input:nth-child(6), .card_finance select:last-child{*/
-/*    width: 624px;*/
-/*}*/
-
