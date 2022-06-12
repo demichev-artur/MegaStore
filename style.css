@@ -25,10 +25,10 @@ h1{
     text-align: center;
     color: #000000;
 }
-.card_anketa h1:first-child{
+.card_anketa h1:first-child, .card_finance h1:first-child{
     font-size: 20px;
 }
-.card_password h1, .card_anketa h1:nth-child(2){
+.card_password h1, .card_anketa h1:nth-child(2), .card_finance h1:nth-child(2), .card_finance h1:nth-child(11){
     margin-bottom: 16px!important;
 }
 p{
